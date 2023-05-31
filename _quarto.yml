@@ -4,4 +4,7 @@ project:
   
 editor: visual
 
+theme:
+  light: flatly
+  dark: darkly
 
