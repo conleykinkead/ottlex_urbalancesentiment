@@ -195,8 +195,9 @@ ur_sentiments |>
 #| fig-height: 3
 
 ur_district_sentiment |>
-  ggplot(aes(likely_council_district, sentiment)) +
-  geom_point()
+  ggplot(aes(x=factor(likely_council_district, level=c('1','2', '3', '4','5','6','7','8','9','10','11','12')), y=sentiment)) +
+  geom_point() +
+  xlab('likely council district')
 ```
 
 ## Mapping sentiment by likely council district
